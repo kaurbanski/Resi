@@ -9,8 +9,6 @@
     <link rel="stylesheet" type="text/css" href="styles/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="node_modules/wow.js/css/libs/animate.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-
-
 </head>
 
 <body>
@@ -47,6 +45,17 @@
         <div class="slider">
             <div class="slider-img">
                 <div class="slider-header">
+                    <div class="slider-title" style="display: none">
+                        <h2>Clean & modern</h2>
+                    </div>
+                    <div class="slider-subtitle" style="display: none;">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+                    </div>
+                </div>
+                <img src="images/slide2.jpg" alt="Image for slider with MacBook" />
+            </div>
+            <div class="slider-img">
+                <div class="slider-header">
                     <div class="slider-title">
                         <h2>Fully Responsive</h2>
                     </div>
@@ -56,17 +65,6 @@
                 </div>
 
                 <img src="images/slide1.jpg" alt="Image for slider with MacBook" />
-            </div>
-            <div class="slider-img">
-                <div class="slider-header">
-                    <div class="slider-title">
-                        <h2>Clean & modern</h2>
-                    </div>
-                    <div class="slider-subtitle">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                    </div>
-                </div>
-                <img src="images/slide2.jpg" alt="Image for slider with MacBook" />
             </div>
         </div>
 
@@ -89,7 +87,7 @@
     <div class="container">
         <div class="recent-works-thumbnails clearfix">
             <div class="thumbnail wow bounceIn animated" data-wow-offset="0" data-wow-delay="0.8s">
-                
+
                 <div class="thumbnail-content">
                     <h4>Quick Support</h4>
                     <i class="fa fa-heart-o fa-3x"></i>
@@ -121,7 +119,7 @@
             </div>
         </div>
         <div class="recent-works-thumbnails clearfix" data-wow-offset="0" data-wow-delay="0.8s">
-            <div class="thumbnail wow bounceIn animated" >
+            <div class="thumbnail wow bounceIn animated">
                 <div class="thumbnail-content">
                     <h4>Quick Support</h4>
                     <i class="fa fa-heart-o fa-3x"></i>
@@ -275,28 +273,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="node_modules/wow.js/dist/wow.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.slider').slick({
-                arrows: true,
-                autoplay: true
-            });
-        });
-    </script>
-
-    <script>
-        new WOW().init();
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.icon').click(function () {
-                var nav = $('#navbar-top');
-                nav.toggle(200);
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/custom-scripts.js"></script>
 
 </body>
 
