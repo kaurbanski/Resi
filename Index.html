@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/wow.js/css/libs/animate.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 
 
 </head>
@@ -18,7 +19,7 @@
             <div class="navbar-header">
                 <a href="#" class="navbar-brand">Resi</a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu" id="navbar-top">
                 <ul>
                     <li class="active">
                         <a href="#">HOME</a>
@@ -37,6 +38,7 @@
                     </li>
                 </ul>
             </div>
+            <a href="javascript:void(0);" class="icon">&#9776;</a>
         </nav>
 
     </div>
@@ -53,7 +55,7 @@
                     </div>
                 </div>
 
-                <img src="Images/slide1.jpg" alt="Image for slider with MacBook" />
+                <img src="images/slide1.jpg" alt="Image for slider with MacBook" />
             </div>
             <div class="slider-img">
                 <div class="slider-header">
@@ -64,7 +66,7 @@
                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
                     </div>
                 </div>
-                <img src="Images/slide2.jpg" alt="Image for slider with MacBook" />
+                <img src="images/slide2.jpg" alt="Image for slider with MacBook" />
             </div>
         </div>
 
@@ -86,7 +88,8 @@
 
     <div class="container">
         <div class="recent-works-thumbnails clearfix">
-            <div class="thumbnail">
+            <div class="thumbnail wow bounceIn animated" data-wow-offset="0" data-wow-delay="0.8s">
+                
                 <div class="thumbnail-content">
                     <h4>Quick Support</h4>
                     <i class="fa fa-heart-o fa-3x"></i>
@@ -96,7 +99,7 @@
                     <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="thumbnail">
+            <div class="thumbnail wow bounceIn animated" data-wow-offset="0" data-wow-delay="1.3s">
                 <div class="thumbnail-content">
                     <h4>Web Design</h4>
                     <i class="fa fa-desktop fa-3x"></i>
@@ -106,7 +109,7 @@
                     <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="thumbnail">
+            <div class="thumbnail wow bounceIn animated" data-wow-offset="0" data-wow-delay="1.3s">
                 <div class="thumbnail-content">
                     <h4>Easy Customize</h4>
                     <i class="fa fa-location-arrow fa-3x"></i>
@@ -117,8 +120,8 @@
                 </div>
             </div>
         </div>
-        <div class="recent-works-thumbnails clearfix">
-            <div class="thumbnail">
+        <div class="recent-works-thumbnails clearfix" data-wow-offset="0" data-wow-delay="0.8s">
+            <div class="thumbnail wow bounceIn animated" >
                 <div class="thumbnail-content">
                     <h4>Quick Support</h4>
                     <i class="fa fa-heart-o fa-3x"></i>
@@ -128,7 +131,7 @@
                     <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="thumbnail">
+            <div class="thumbnail wow bounceIn animated" data-wow-offset="0" data-wow-delay="1.3s">
                 <div class="thumbnail-content">
                     <h4>Hight Quality</h4>
                     <i class="fa fa-laptop fa-3x"></i>
@@ -138,7 +141,7 @@
                     <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="thumbnail">
+            <div class="thumbnail wow bounceInUp animated" data-wow-offset="0" data-wow-delay="1.3s">
                 <div class="thumbnail-content">
                     <h4>Quick Support</h4>
                     <i class="fa fa-cloud fa-3x"></i>
@@ -159,10 +162,10 @@
 
     <div class="container">
         <div class="about-us top clearfix">
-            <div class="your-image">
-                <img src="Images/your-image.png" class="img-responsive" alt="Image of owner of the site">
+            <div class="your-image wow bounceIn animated" data-wow-offset="0" data-wow-delay="0.8s">
+                <img src="images/your-image.png" class="img-responsive" alt="Image of owner of the site">
             </div>
-            <div class="right-menu clearfix">
+            <div class="right-menu clearfix wow bounceIn animated" data-wow-offset="0" data-wow-delay="1.3s">
                 <div class="menu-item">
                     <h4>List group item heading</h4>
                     <p>praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
@@ -182,11 +185,11 @@
             </div>
         </div>
         <div class="about-us bottom clearfix">
-            <div class="left-menu-image ">
-                <img src="Images/left-menu-image.jpg" class="img-responsive" />
+            <div class="left-menu-image wow bounceIn animated" data-wow-offset="0" data-wow-delay="0.8s">
+                <img src="images/left-menu-image.jpg" class="img-responsive" />
             </div>
 
-            <div class="left-menu">
+            <div class="left-menu wow bounceIn animated" data-wow-offset="0" data-wow-delay="1.3s">
                 <div class="menu-item">
                     <h4>List group item heading</h4>
                     <p>praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
@@ -216,24 +219,41 @@
         <div class="widgets clearfix">
             <div class="widget">
                 <h5>Nam libero tempore</h5>
-                <p>soluta nobis est eligendi optio cumque nihil impedit quo minus id excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui</p>
+                <p>soluta nobis est eligendi optio cumque nihil impedit quo minus id excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa qui</p>
             </div>
             <div class="widget">
                 <h5>Pages</h5>
                 <ul>
-                    <li><a href="#">Press release</a></li>
-                    <li><a href="#">Terms and conditions</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Career center</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li>
+                        <a href="#">Press release</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Career center</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
                 </ul>
             </div>
             <div class="widget">
                 <h5>Latest posts</h5>
                 <ul>
-                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                        <li><a href="#">Pellentesque et pulvinar enim</a></li>
-                        <li><a href="#">Natus error sit voluptatem</a></li>
+                    <li>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                    </li>
+                    <li>
+                        <a href="#">Pellentesque et pulvinar enim</a>
+                    </li>
+                    <li>
+                        <a href="#">Natus error sit voluptatem</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -242,7 +262,7 @@
     <div class="container-fluid">
         <footer>
             <p>
-                    ©Resi Theme - All right reserved.
+                ©Resi Theme - All right reserved.
             </p>
             <a href="https://bootstrapmade.com/bootstrap-education-templates/">Bootstrap Education Themes</a>
             by
@@ -254,12 +274,26 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="node_modules/wow.js/dist/wow.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
             $('.slider').slick({
                 arrows: true,
                 autoplay: true
+            });
+        });
+    </script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.icon').click(function () {
+                var nav = $('#navbar-top');
+                nav.toggle(200);
             });
         });
     </script>
